@@ -40,6 +40,20 @@
             <a class="extra-padding-1 teal-text" href="#">Z</a>
         </div>
     </div>
+    <div class="row margin-top text-center visible-xs">
+        <div class="col-md-6 col-md-offset-5">
+            <a title="Add New Contact" class="btn-floating btn-large teal z-depth-2">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row margin-top text-center  hidden-xs">
+        <div class="col-md-2 col-md-offset-10">
+            <a title="Add New Contact" class="btn-floating btn-large teal z-depth-2">
+                <i class="fa fa-plus"></i>
+            </a>
+        </div>
+    </div>
         @each('components._card', $cards, 'card')
     </div>
 @endsection
