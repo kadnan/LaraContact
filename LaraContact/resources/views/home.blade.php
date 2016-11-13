@@ -40,36 +40,6 @@
             <a class="extra-padding-1 teal-text" href="#">Z</a>
         </div>
     </div>
-    <div class="row margin-top">
-        <ul>
-            @for($o =0;$o<10;$o++)
-                <li class="col-md-4 medium-margin-top">
-                    <div style="width:100%;height:34.5rem;" class="card teal">
-                        <div class="card">
-                            <div class="view overlay hm-white-slight z-depth-5">
-                                <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
-                                <a href="#">
-                                    <div class="mask waves-effect"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-content white-text text-center">
-                        <span class="card-title">
-                            <h3>Adnan Siddiqi</h3>
-
-                        </span>
-                            <div class="card-details">
-                                <h6>Freelance Consultant</h6>
-                            </div>
-                        </div>
-                        <div class="card-action text-center">
-                            <a href="#">
-                                <a class="btn-floating btn-danger waves-effect waves-light white-text">M</a>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            @endfor
-        </ul>
+        @each('components._card', $cards, 'card')
     </div>
 @endsection
