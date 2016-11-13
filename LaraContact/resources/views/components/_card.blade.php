@@ -1,9 +1,9 @@
 <div class="col-md-4 medium-margin-top">
     <div style="width:100%;height:35.5rem;" class="card teal">
         <div class="testimonial-card">
-            <div style="height: 14rem;" class="view overlay hm-white-slight ">
-                <img style="position: relative;float: left;z-index: 1;" src="{!! $card['image'] !!}" class="img-responsive">
-                <div style="position: absolute;top: 5rem;left:9.5rem;z-index: 900;">
+            <div style="height: 14rem;" class="view overlay hm-white-slight">
+                <img style="position: relative;float: left;z-index: 1;" src="{!! $card['image'] !!}" class="img-responsive center-block">
+                <div class="center-block" style="position: absolute;top: 5rem;left:40%;z-index: 900;">
                     <img  src="https://www.gravatar.com/avatar/{!! $card['avatar'] !!}" class="img-circle img-responsive">
                 </div>
                 <a href="#">
