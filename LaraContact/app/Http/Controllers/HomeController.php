@@ -38,4 +38,9 @@ class HomeController extends Controller
         return view('home')
             ->with('cards', $cards);
     }
+
+    public function create()
+    {
+        return view('new');
+    }
 }
