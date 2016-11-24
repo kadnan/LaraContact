@@ -1,14 +1,10 @@
 @extends('layout.master')
 @section('content')
-    <div class="hidden">
-        <a class="btn btn-default waves-effect waves-light">Default</a>
-        <a class="btn btn-primary waves-effect waves-light">Primary</a>
-        <a class="btn btn-success waves-effect waves-light">Success</a>
-        <a class="btn btn-info waves-effect waves-light">Info</a>
-        <a class="btn btn-warning waves-effect waves-light">Warning</a>
-        <a class="btn btn-danger waves-effect waves-light">Danger</a>
-        <a class="btn btn-link">Link</a>
-    </div>
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
 
     <div class="row margin-top">
         <div class="col-md-11 col-md-offset-1">
