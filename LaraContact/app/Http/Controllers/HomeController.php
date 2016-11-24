@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -42,5 +44,35 @@ class HomeController extends Controller
     public function create()
     {
         return view('new');
+    }
+
+    public function add(Request $request)
+    {
+
+        $first_name = $request->get('first_name');
+        $last_name = $request->get('last_name');
+        $address = $request->get('address');
+        $city = $request->get('city');
+        $country = $request->get('country');
+        $email = $request->get('email');
+        $home_phone = $request->get('home_phone');
+        $office_phone = $request->get('office_phone');
+        $mobile = $request->get('mobile');
+        $cover_photo = $request->file('cover_photo')->storePublicly('covers');
+
+        $contact = new Contact();
+        $contact->first_name = $first_name;
+        $contact->last_name = $last_name;
+        $contact->address = $address;
+        $contact->city = $city;
+        $contact->country = $country;
+        $contact->email = $email;
+        $contact->home_phone = $home_phone;
+        $contact->office_phone = $office_phone;
+        $contact->mobile = $mobile;
+        $contact->cover_photo = $cover_photo;
+        if ($contact->save()) {
+            return redirect('/')->with('status', 'Contact added successfully!');
+        }
     }
 }
