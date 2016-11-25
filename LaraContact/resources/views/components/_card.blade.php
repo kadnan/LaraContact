@@ -2,11 +2,11 @@
     <div style="width:100%;height:35.5rem;" class="card teal">
         <div class="testimonial-card">
             <div style="height: 14rem;" class="view overlay hm-white-slight">
-                <img style="position: relative;float: left;z-index: 1;" src="{!! $card['image'] !!}" class="img-responsive center-block">
-                <div class="center-block" style="position: absolute;top: 5rem;left:40%;z-index: 900;">
-                    <img  src="https://www.gravatar.com/avatar/{!! $card['avatar'] !!}" class="img-circle img-responsive">
-                </div>
-                <a href="#">
+                <a href="view/{!! $card['id'] !!}">
+                    <img style="position: relative;float: left;z-index: 1;" src="{!! asset($card['image']) !!}" class="img-responsive center-block">
+                    <div class="center-block" style="position: absolute;top: 5rem;left:40%;z-index: 900;">
+                        <img  src="https://www.gravatar.com/avatar/{!! $card['avatar'] !!}" class="img-circle img-responsive">
+                    </div>
                     <div class="mask waves-effect"></div>
                 </a>
             </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="card-action text-center">
             <a href="#">
-                <a class="btn-floating btn-danger waves-effect waves-light white-text">
+                <a href="edit/{!! $card['id'] !!}" class="btn-floating btn-danger waves-effect waves-light white-text">
                     <i class="fa fa-pencil"></i>
                 </a>
             </a>

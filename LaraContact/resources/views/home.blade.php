@@ -38,7 +38,7 @@
     </div>
     <div class="row margin-top text-center visible-xs">
         <div class="col-md-6 col-md-offset-5">
-            <a title="Add New Contact" class="btn-floating btn-large teal z-depth-2">
+            <a href="/new" title="Add New Contact" class="btn-floating btn-large teal z-depth-2">
                 <i class="fa fa-plus"></i>
             </a>
         </div>

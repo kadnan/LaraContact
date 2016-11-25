@@ -13832,4 +13832,85 @@ a.waves-effect .waves-ripple {
 .large-margin-top {
   margin-top: 90px; }
 
+/* label color */
+.input-field label {
+  color: #009688; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #009688; }
+
+.input-field input[type=email]:focus + label {
+  color: #009688; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #000; }
+
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #000; }
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #000; }
+
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #000;
+  width: 300px !important; }
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #009688;
+  box-shadow: 0 1px 0 0 #000;
+  width: 300px !important;
+  color: red !important; }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #009688; }
+
+input {
+  color: #ffffff !important; }
+
+select {
+  background: #009688 !important;
+  color: #ffffff !important; }
+
+select option:hover {
+  color: #000;
+  box-shadow: inset 20px 20px #00f; }
+
+select option:checked:after {
+  content: attr(title);
+  background: #666;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: none; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #009688;
+  opacity: 0.4; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #009688;
+  opacity: 0.4; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #009688;
+  opacity: 0.4; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #009688;
+  opacity: 0.4; }
+
 /*# sourceMappingURL=app.css.map */
